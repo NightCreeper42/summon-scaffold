@@ -80,7 +80,8 @@ async def on_ready():
         await channel.send(f"<@!{your_id}> Summon Dave is already on you twonk")
     else:
         await channel.send(random.choice([
-            "" # here, put a list of things you want the bot to maybe say when it's first turned on to let others know that it's on. It's recommended you use @here
+            "@here greeting 1", # here, put a list of things you want the bot to maybe say when it's first turned on to let others know that it's on. It's recommended you use @here
+            "@here greeting 2"
         ]))
 
 @bot.event
