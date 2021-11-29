@@ -19,7 +19,8 @@ channel_id = 123456789
 your_id = 123456789
 other_id = 123456789
 TOKEN = "abc"
-command_prefix = "Davus " # the space after is important. 
+command_prefix = "foo " # the space after is important. 
+other_bot_name = "Dave"
 
 bot = commands.Bot(command_prefix=command_prefix, help_command=None, intents=intents) # important stuff that needs to be defined or the whole code falls down the kermit
 
@@ -84,9 +85,9 @@ async def on_ready():
 
 @bot.event
 async def on_member_update(before, after):
-    if str(after.name) == "Summon Dave" and after.status == Status.online:
+    if str(after.name) == f"Summon {other_bot_name}" and after.status == Status.online:
         channel = bot.get_channel(channel_id)
-        await channel.send("<@!{other_id}> I'm already online you twonk")
+        await channel.send(f"<@!{other_id}> I'm already online you twonk")
 
 bot.add_cog(botCommands())
 bot.run(TOKEN) # boring discord backend stuff
