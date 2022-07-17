@@ -25,7 +25,7 @@ channel_id = 123456789
 your_id = 123456789
 other_id = 123456789
 TOKEN = "abc"
-command_prefix = "Davus " # the space after is important. 
+command_prefix = "Yournem Namus " # the space after is important. 
 other_bot_name = "Dave"
 ```
 
