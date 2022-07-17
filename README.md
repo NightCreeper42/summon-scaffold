@@ -11,7 +11,7 @@ Now that you have python installed, you'll need to create a discord Application 
 ## It's alive, *it's aliiive!*
 Cool, so you've got your hollow shell of a discord bot invited to your server. Now, let's stuff it with usefulness!
    
-But first, you may need to install some libraries using pip. If you haven't, get pip. I feel like I shouldn't need to tell you how to do this. Use our initiative!  
+But first, you may need to install some libraries using pip. If you haven't, get pip. I feel like I shouldn't need to tell you how to do this. Use your initiative!  
 Next, you'll need to install the libraries `discord`, `gtts` and `playsound`. Do this by going into your command line and typing `pip install <library>`.   
    
 At the top of the code, you should see this:
