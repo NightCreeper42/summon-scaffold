@@ -1,6 +1,4 @@
-import asyncio
 from discord.ext import commands
-from bluetooth import *
 from discord import Status
 import time,discord,random,playsound,gtts,os
 from discord.ext.commands.core import Command # *yawn* boring import stuff
